@@ -55,26 +55,24 @@ export default function Home() {
           const [index, setIndex] = useState(0);
           return (
             <>
+              <h2>Slideshow</h2>
+              <div>
+                <button onClick={() => setIndex(Math.max(0, index - 1))}>
+                  Previous
+                </button>
+                <button
+                  onClick={() => setIndex(Math.min(index + 1, imgs.length - 1))}
+                >
+                  Next
+                </button>
+              </div>
               <AnimatePresence mode='wait'>
-                <h2>Slideshow</h2>
-                <div>
-                  <button onClick={() => setIndex(Math.max(0, index - 1))}>
-                    Previous
-                  </button>
-                  <button
-                    onClick={() =>
-                      setIndex(Math.min(index + 1, imgs.length - 1))
-                    }
-                  >
-                    Next
-                  </button>
-                </div>
                 <motion.img
                   key={index}
                   src={imgs[index]}
-                  initial={{ opacity: 0, x: 1000, zIndex: 0 }}
+                  initial={{ opacity: 0, x: 400, zIndex: 0 }}
                   animate={{ opacity: 1, x: 0, zIndex: 1 }}
-                  exit={{ opacity: 0, x: -1000, zIndex: 0 }}
+                  exit={{ opacity: 0, x: -400, zIndex: 0 }}
                 />
               </AnimatePresence>
             </>
