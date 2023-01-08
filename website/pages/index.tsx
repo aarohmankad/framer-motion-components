@@ -23,6 +23,9 @@ const Home: NextPage = () => {
           <li>
             <Link href='/introduction'>Introduction</Link>
           </li>
+          <li>
+            <Link href='/keyframes'>Keyframes</Link>
+          </li>
         </ul>
       </main>
     </div>
