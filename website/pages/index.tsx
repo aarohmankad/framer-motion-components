@@ -26,6 +26,9 @@ const Home: NextPage = () => {
           <li>
             <Link href='/keyframes'>Keyframes</Link>
           </li>
+          <li>
+            <Link href='/scrollbar'>useScroll</Link>
+          </li>
         </ul>
       </main>
     </div>
