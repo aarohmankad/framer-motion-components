@@ -29,6 +29,9 @@ const Home: NextPage = () => {
           <li>
             <Link href='/scrollbar'>useScroll</Link>
           </li>
+          <li>
+            <Link href='/exit'>Exit Animations</Link>
+          </li>
         </ul>
       </main>
     </div>
