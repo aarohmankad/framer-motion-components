@@ -55,7 +55,7 @@ export default function Home() {
           const [index, setIndex] = useState(0);
           return (
             <>
-              <AnimatePresence>
+              <AnimatePresence mode='wait'>
                 <h2>Slideshow</h2>
                 <div>
                   <button onClick={() => setIndex(Math.max(0, index - 1))}>
